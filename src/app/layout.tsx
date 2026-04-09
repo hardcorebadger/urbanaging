@@ -16,9 +16,24 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Urban Aging | Dr. Claire Trefethen, OTD",
+  metadataBase: new URL("https://urbanaging.com"),
+  title: "Urban Aging — Occupational Therapy",
   description:
     "Occupational therapy for older adults in New York City. If you can age here, you can age anywhere.",
+  openGraph: {
+    title: "Urban Aging — Occupational Therapy",
+    description:
+      "Occupational therapy for older adults in New York City. If you can age here, you can age anywhere.",
+    images: [{ url: "/claire.jpeg", width: 1200, height: 1200, alt: "Claire Trefethen, OTD — Urban Aging" }],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Urban Aging — Occupational Therapy",
+    description:
+      "Occupational therapy for older adults in New York City. If you can age here, you can age anywhere.",
+    images: ["/claire.jpeg"],
+  },
 };
 
 export default function RootLayout({

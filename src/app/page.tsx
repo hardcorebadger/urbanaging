@@ -70,7 +70,7 @@ export default function Home() {
             href="#contact"
             className={`${tag} inline-flex items-center gap-3 border border-taupe px-9 py-4 w-fit hover:bg-charcoal hover:text-cream hover:border-charcoal transition-all duration-300`}
           >
-            Book a consultation
+            Contact me
             <svg width="16" height="12" viewBox="0 0 16 12" fill="none">
               <path d="M1 6h13M10 1l4.5 5-4.5 5" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
@@ -377,7 +377,7 @@ export default function Home() {
             href="mailto:claire@urbanaging.com"
             className={`${tag} inline-flex items-center gap-3 border border-taupe px-9 py-4 w-fit hover:bg-charcoal hover:text-cream hover:border-charcoal transition-all duration-300`}
           >
-            Schedule a consultation
+            Contact me
             <svg width="16" height="12" viewBox="0 0 16 12" fill="none">
               <path d="M1 6h13M10 1l4.5 5-4.5 5" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
