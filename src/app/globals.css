@@ -1,14 +1,31 @@
 @import "tailwindcss";
 
-@theme {
-  --color-cream: #FAF8F5;
-  --color-ink: #1A1A1A;
-  --color-sage: #4A6741;
-  --color-stone: #EDE8E0;
-  --color-rule: #D4CFC8;
+:root {
+  --cream: #F7F4EF;
+  --warm-white: #FDFCFA;
+  --charcoal: #2C2A26;
+  --sage: #9BA88C;
+  --sage-light: #D4DBC9;
+  --sage-dark: #6B7A5C;
+  --taupe: #B5A99A;
+  --taupe-light: #D9D1C7;
+  --muted: #8A857D;
+  --ink: #1A1916;
+}
 
+@theme inline {
+  --color-cream: var(--cream);
+  --color-warm-white: var(--warm-white);
+  --color-charcoal: var(--charcoal);
+  --color-sage: var(--sage);
+  --color-sage-light: var(--sage-light);
+  --color-sage-dark: var(--sage-dark);
+  --color-taupe: var(--taupe);
+  --color-taupe-light: var(--taupe-light);
+  --color-muted: var(--muted);
+  --color-ink: var(--ink);
   --font-display: var(--font-cormorant);
-  --font-sans: var(--font-inter);
+  --font-sans: var(--font-outfit);
 }
 
 html {
@@ -16,8 +33,12 @@ html {
 }
 
 body {
-  background-color: #FAF8F5;
-  color: #1A1A1A;
+  background: var(--cream);
+  color: var(--charcoal);
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
 }
