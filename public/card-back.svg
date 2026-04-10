@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+  width="3.5in" height="2in" viewBox="0 0 3500 2000">
+
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,300&amp;display=swap');
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="3500" height="2000" fill="#F7F4EF"/>
+
+  <!-- Icon mark — centered, large, faint -->
+  <g transform="translate(1673, 580) scale(66)" opacity="0.12">
+    <line x1="0.5" x2="0.5" y2="24" stroke="#1A1916" stroke-width="0.4"/>
+    <line x1="6.5" x2="6.5" y2="24" stroke="#1A1916" stroke-width="0.4"/>
+    <line x1="12.5" x2="12.5" y2="24" stroke="#1A1916" stroke-width="0.4"/>
+    <line x1="18.5" x2="18.5" y2="24" stroke="#1A1916" stroke-width="0.4"/>
+    <line x1="0" y1="0.5"  x2="18" y2="0.5"  stroke="#1A1916" stroke-width="0.4"/>
+    <line x1="0" y1="12.5" x2="18" y2="12.5" stroke="#1A1916" stroke-width="0.4"/>
+    <line x1="0" y1="23.5" x2="18" y2="23.5" stroke="#1A1916" stroke-width="0.4"/>
+  </g>
+
+  <!-- Tagline -->
+  <text
+    x="1750" y="1420"
+    font-family="'Cormorant Garamond', Georgia, serif"
+    font-style="italic"
+    font-weight="300"
+    font-size="130"
+    text-anchor="middle"
+    fill="#6B7A5C">If you can age here, you can age anywhere.</text>
+
+  <!-- Website small -->
+  <text
+    x="1750" y="1570"
+    font-family="'Outfit', Arial, sans-serif"
+    font-weight="300"
+    font-size="70"
+    letter-spacing="8"
+    text-anchor="middle"
+    fill="#B5A99A">URBANAGING.COM</text>
+
+</svg>

@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+  width="3.5in" height="2in" viewBox="0 0 3500 2000">
+
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&amp;family=Outfit:wght@300;400&amp;display=swap');
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="3500" height="2000" fill="#F7F4EF"/>
+
+  <!-- Icon mark — top left (scaled 22x from 19×24 viewBox) -->
+  <g transform="translate(280, 210) scale(21)">
+    <line x1="0.5" x2="0.5" y2="24" stroke="#1A1916" stroke-width="0.8"/>
+    <line x1="6.5" x2="6.5" y2="24" stroke="#1A1916" stroke-width="0.8"/>
+    <line x1="12.5" x2="12.5" y2="24" stroke="#1A1916" stroke-width="0.8"/>
+    <line x1="18.5" x2="18.5" y2="24" stroke="#1A1916" stroke-width="0.8"/>
+    <line x1="0" y1="0.5"  x2="18" y2="0.5"  stroke="#1A1916" stroke-width="0.8"/>
+    <line x1="0" y1="12.5" x2="18" y2="12.5" stroke="#1A1916" stroke-width="0.8"/>
+    <line x1="0" y1="23.5" x2="18" y2="23.5" stroke="#1A1916" stroke-width="0.8"/>
+  </g>
+
+  <!-- Wordmark text -->
+  <text
+    x="700" y="710"
+    font-family="'Cormorant Garamond', Georgia, serif"
+    font-weight="300"
+    font-size="220"
+    letter-spacing="18"
+    fill="#1A1916">URBAN AGING</text>
+
+  <!-- Divider -->
+  <line x1="280" y1="830" x2="3220" y2="830" stroke="#9BA88C" stroke-width="1.5"/>
+
+  <!-- Name -->
+  <text
+    x="280" y="1080"
+    font-family="'Cormorant Garamond', Georgia, serif"
+    font-weight="300"
+    font-size="220"
+    fill="#1A1916">Claire Trefethen</text>
+
+  <!-- Credentials -->
+  <text
+    x="280" y="1230"
+    font-family="'Outfit', Arial, sans-serif"
+    font-weight="300"
+    font-size="80"
+    letter-spacing="6"
+    fill="#9BA88C">OTD, OTR/L  ·  NBC-HWC  ·  NASM-CPT  ·  SFS</text>
+
+  <!-- Phone -->
+  <text
+    x="280" y="1620"
+    font-family="'Outfit', Arial, sans-serif"
+    font-weight="300"
+    font-size="80"
+    fill="#8A857D">(719) 351-5668</text>
+
+  <!-- Email -->
+  <text
+    x="280" y="1740"
+    font-family="'Outfit', Arial, sans-serif"
+    font-weight="300"
+    font-size="80"
+    fill="#8A857D">claire@urbanaging.com</text>
+
+  <!-- Website — right aligned -->
+  <text
+    x="3220" y="1620"
+    font-family="'Outfit', Arial, sans-serif"
+    font-weight="300"
+    font-size="80"
+    letter-spacing="4"
+    text-anchor="end"
+    fill="#9BA88C">urbanaging.com</text>
+
+  <!-- Location — right aligned -->
+  <text
+    x="3220" y="1740"
+    font-family="'Outfit', Arial, sans-serif"
+    font-weight="300"
+    font-size="80"
+    letter-spacing="4"
+    text-anchor="end"
+    fill="#B5A99A">New York, NY</text>
+
+</svg>
