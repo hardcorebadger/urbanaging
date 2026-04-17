@@ -10,8 +10,9 @@
   <!-- Background -->
   <rect width="3500" height="2000" fill="#F7F4EF"/>
 
-  <!-- Icon mark — top left (scaled 22x from 19×24 viewBox) -->
-  <g transform="translate(280, 210) scale(21)">
+  <!-- Icon mark — scaled to match cap-height of text (font-size 220, cap ~154 units) -->
+  <!-- scale 6.5: icon renders 124×156 units, baseline-aligned with text at y=710 -->
+  <g transform="translate(280, 554) scale(6.5)">
     <line x1="0.5" x2="0.5" y2="24" stroke="#1A1916" stroke-width="0.8"/>
     <line x1="6.5" x2="6.5" y2="24" stroke="#1A1916" stroke-width="0.8"/>
     <line x1="12.5" x2="12.5" y2="24" stroke="#1A1916" stroke-width="0.8"/>
@@ -21,9 +22,9 @@
     <line x1="0" y1="23.5" x2="18" y2="23.5" stroke="#1A1916" stroke-width="0.8"/>
   </g>
 
-  <!-- Wordmark text -->
+  <!-- Wordmark text — starts just after icon (280 + 124 + 36 gap) -->
   <text
-    x="700" y="710"
+    x="440" y="710"
     font-family="'Cormorant Garamond', Georgia, serif"
     font-weight="300"
     font-size="220"
