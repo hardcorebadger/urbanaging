@@ -67,10 +67,12 @@ export default function Home() {
             inside out.
           </p>
           <a
-            href="#contact"
+            href="https://tula.nyc/schedule"
+            target="_blank"
+            rel="noopener noreferrer"
             className={`${tag} inline-flex items-center gap-3 border border-taupe px-9 py-4 w-fit hover:bg-charcoal hover:text-cream hover:border-charcoal transition-all duration-300`}
           >
-            Contact me
+            Schedule online
             <svg width="16" height="12" viewBox="0 0 16 12" fill="none">
               <path d="M1 6h13M10 1l4.5 5-4.5 5" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
@@ -341,47 +343,60 @@ export default function Home() {
           >
             Ready to take<br />the next step?
           </h2>
-          <p className="text-[16px] leading-[1.8] text-charcoal/70 font-normal mb-10 max-w-[380px]">
-            Whether you are looking for support for yourself or a loved one,
-            I would love to connect. Reach out to schedule a consultation or
-            ask any questions. In-person and virtual appointments are available.
-          </p>
-
-          <div className="space-y-5 mb-10">
-            {[
-              { label: "Location", value: "New York, NY", href: undefined },
-              { label: "Phone", value: "(719) 351-5668", href: "tel:7193515668" },
-              { label: "Email", value: "claire@urbanaging.com", href: "mailto:claire@urbanaging.com" },
-            ].map((item) => (
-              <div key={item.label} className="flex items-baseline gap-4">
-                <span className={`${tag} text-taupe w-20 shrink-0`} style={{ letterSpacing: "2px" }}>
-                  {item.label}
-                </span>
-                {item.href ? (
-                  <a
-                    href={item.href}
-                    className={`${display} text-[1.15rem] text-charcoal hover:text-sage-dark transition-colors`}
-                  >
-                    {item.value}
-                  </a>
-                ) : (
-                  <span className={`${display} text-[1.15rem] text-charcoal`}>
-                    {item.value}
-                  </span>
-                )}
+          {/* Option 1: In-clinic at Tula */}
+          <div className="mb-8">
+            <p className={`${tag} text-taupe mb-3`} style={{ letterSpacing: "2px" }}>In-clinic at Tula</p>
+            <p className="text-[14px] text-charcoal/55 mb-4 leading-relaxed">
+              99 University Pl, Floor 9 · Greenwich Village
+            </p>
+            <div className="space-y-1 mb-6">
+              <div>
+                <a href="tel:2126041316" className={`${display} text-[1.1rem] text-charcoal hover:text-sage-dark transition-colors`}>
+                  (212) 604-1316
+                </a>
               </div>
-            ))}
+              <div>
+                <a href="https://tula.nyc/schedule" target="_blank" rel="noopener noreferrer" className={`${display} text-[1.1rem] text-charcoal hover:text-sage-dark transition-colors`}>
+                  tula.nyc/schedule
+                </a>
+              </div>
+            </div>
+            <a
+              href="https://tula.nyc/schedule"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`${tag} inline-flex items-center gap-3 border border-taupe px-9 py-4 w-fit hover:bg-charcoal hover:text-cream hover:border-charcoal transition-all duration-300`}
+            >
+              Schedule online
+              <svg width="16" height="12" viewBox="0 0 16 12" fill="none">
+                <path d="M1 6h13M10 1l4.5 5-4.5 5" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </a>
           </div>
 
-          <a
-            href="mailto:claire@urbanaging.com"
-            className={`${tag} inline-flex items-center gap-3 border border-taupe px-9 py-4 w-fit hover:bg-charcoal hover:text-cream hover:border-charcoal transition-all duration-300`}
-          >
-            Contact me
-            <svg width="16" height="12" viewBox="0 0 16 12" fill="none">
-              <path d="M1 6h13M10 1l4.5 5-4.5 5" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
-          </a>
+          <div className="border-t mb-8" style={{ borderColor: "var(--taupe-light)", opacity: 0.35 }} />
+
+          {/* Option 2: Private / in-home */}
+          <div>
+            <p className={`${tag} text-taupe mb-3`} style={{ letterSpacing: "2px" }}>Private sessions</p>
+            <p className="text-[14px] text-charcoal/55 mb-4 leading-relaxed">
+              In-home visits · reach out directly to book
+            </p>
+            <div className="mb-6">
+              <a href="mailto:claire@urbanaging.com" className={`${display} text-[1.1rem] text-charcoal hover:text-sage-dark transition-colors`}>
+                claire@urbanaging.com
+              </a>
+            </div>
+            <a
+              href="mailto:claire@urbanaging.com"
+              className={`${tag} inline-flex items-center gap-3 border border-taupe/50 px-9 py-4 w-fit text-charcoal/70 hover:bg-charcoal hover:text-cream hover:border-charcoal transition-all duration-300`}
+            >
+              Email Claire
+              <svg width="16" height="12" viewBox="0 0 16 12" fill="none">
+                <path d="M1 6h13M10 1l4.5 5-4.5 5" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </a>
+          </div>
         </div>
       </section>
 
@@ -420,16 +435,36 @@ export default function Home() {
             Contact
           </h5>
           <ul className="space-y-3 text-[14px] font-normal" style={{ opacity: 0.75 }}>
-            <li>New York, NY</li>
-            <li>
-              <a href="tel:7193515668" className="hover:opacity-100 transition-opacity">
-                (719) 351-5668
-              </a>
+            <li>99 University Pl, Floor 9<br />New York, NY 10003</li>
+            <li className="pt-1">
+              <span style={{ color: "var(--taupe-light)", fontSize: "10px", letterSpacing: "1.5px", textTransform: "uppercase" }}>Schedule</span>
+              <div className="mt-1 space-y-1">
+                <div>
+                  <a href="tel:2126041316" className="hover:opacity-100 transition-opacity">
+                    (212) 604-1316
+                  </a>
+                </div>
+                <div>
+                  <a href="https://tula.nyc/schedule" target="_blank" rel="noopener noreferrer" className="hover:opacity-100 transition-opacity">
+                    tula.nyc
+                  </a>
+                </div>
+              </div>
             </li>
-            <li>
-              <a href="mailto:claire@urbanaging.com" className="hover:opacity-100 transition-opacity">
-                claire@urbanaging.com
-              </a>
+            <li className="pt-1">
+              <span style={{ color: "var(--taupe-light)", fontSize: "10px", letterSpacing: "1.5px", textTransform: "uppercase" }}>Claire</span>
+              <div className="mt-1 space-y-1">
+                <div>
+                  <a href="tel:7193515668" className="hover:opacity-100 transition-opacity">
+                    (719) 351-5668
+                  </a>
+                </div>
+                <div>
+                  <a href="mailto:claire@urbanaging.com" className="hover:opacity-100 transition-opacity">
+                    claire@urbanaging.com
+                  </a>
+                </div>
+              </div>
             </li>
             <li>Medicare &amp; Private Pay</li>
           </ul>
